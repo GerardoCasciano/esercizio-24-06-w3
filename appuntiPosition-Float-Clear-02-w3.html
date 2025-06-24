@@ -1,0 +1,125 @@
+<!----------------------------------
+comportamento Floating
+priprietà Float
+applicato su elemento di blocco o immagine il resto dei elementi 
+iniziano a girargli a torno ,con CLEAR (selezioando la stessa posizione del float) il resto si assetta
+se si applica float in un elemento ,
+clear applicato al footer il footer si blocca nella posizione 
+Gli elemento flottanti vanno mesi prima nell'HTML
+se le immagini sono posizionate sulla stessa altezza 
+il ClEAR non ha distinzione se destra o sinistra
+Float ha tre valori 
+none,left,right.
+Clear può essere 
+block,booth,si usa creare una classe clearfix
+
+Propietà POSITION...
+propietà Static è quella di default un elemento di position static non è posizionato nella pagine in nessun modo particolare 
+si dichiara esplicitamente nel caso si volgia neutralizzare un altro position applicato in precedenza...
+applicando una classe static e definirlo in css non risulterà visibilmente
+
+il position Relative permette di posizionare l'elemento relativamente alla posizione 
+che avrebbe avuto il valore Static possiamo 
+utilizzare 4 propietà:top,bottom,left,right
+utilizzare i valori in px!!
+Posiizonare un elemento con queste 4 propietà si trova rimosso dal normale flow della pagina
+sarà possibile sovrapporre rendere illegibile far sparire cose non abusarne!!
+ in css
+ position:relative:left ..px,right..px
+il valore absolute ci permetterà di posizionare un elemento in maniera assoluta
+di default saranno di riferimento i bordi della pagina.
+Absolute non contribuirà più all'altezza del suo contenitore un pò come con float
+per scegleire le propietà di riferimento si utilizzano sempre le direzioni ,top, bottom ,left ,right
+
+creare una section in html
+inserire 2 class in 2 div  chiamate card e badge
+per ancorare un elemento ad un altro ,rendere figlio elemento badge in questo caso e utilizzare position relative sul figlio 
+quindi relative al padre e absolute al figlio
+<div>--relative
+    <div></div>---absolute
+</div>
+IL contenitore in relative potrebbe essere suo padre a qualsiasi livello nel caso non ne trovasse nessuno prende in riferimento
+i bordi della pagina.
+L'elemento antenato pootebbe avere un qualsiasi valore di position che non sia STATIC
+Altri due valori sono:
+Position FIXED serve a posizonare un elemento 
+prendendo a riferimento la viewport
+quindi rimane ancorato alla finestra,si utilizza per creare elementi indipendenti dallo scrollo della pagina
+
+
+Valore Position STICKY:è una via di mezzo tra fixed e relative
+le propietà top,bottom,left,right
+servono a fissare un punto di soglia ,
+fino al raggiungimento del punto di soglia si comporterà in relative
+successvamente si comporterà in fixed 
+
+Un utilizzo del binomio position:relative/absolute
+creando padre figlio tra i contenitori....facendo si che sarà posssibile posizionare
+utilizzando top,bottom,left,right in maniera corretta l'elemento.(meglio utilizzare i valori in px.)
+si può cambaire il punto di origine dell'elemento con Transform :transform(...%,..%)
+
+Proprietà Z-index priopietrà di RENDERING
+per sovrapporre un elemento  su di un altro
+in ordine di sovraimoressione
+ 
+<section id container
+<article class box id red
+<article class box id green
+<article class box id blule
+<sectio>
+
+nel css inserire nella classe box il position absolute e per container relative
+inserire position relative nel css container e impostare le direzioni nei css nei id dei colori
+ con z-index si manipola la profondità dei elementi utilizzanod un valore 
+ limite per uno e gli altri seguiranno in base al valore dato sotto il valore limite :
+z-inidex non funizona se l'elemento ha position :static!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------->
